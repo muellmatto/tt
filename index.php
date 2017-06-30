@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <title><?php echo $Site->title() ?></title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
         <?php Theme::favicon('favicon.ico'); ?>
         <?php Theme::css('normalize.css') ?>
         <?php Theme::css('tt.css') ?>
