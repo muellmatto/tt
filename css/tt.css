@@ -1,7 +1,8 @@
 
 body {
-    font-family: 'roboto', sans-serif;
+    font-family: 'Anton', sans-serif;
     margin: 0;
+    color: #5c5c5c;
     display: block;
 }
 .frame {
@@ -29,9 +30,9 @@ body {
     margin-bottom: 2rem;
     font-weight: 700;
 }
-.menu-right a {
+a {
     text-decoration: none;
-    
+    color: grey;    
 }
 img {
     box-sizing: border-box;
@@ -41,6 +42,16 @@ img {
 }
 iframe {
     max-width: 100%;
+}
+.taglist {
+    padding-bottom: 1rem;
+    list-style: circle;
+}
+.tagItem {
+    float: left;
+    padding-right: 2rem;
+    transform: rotate(4deg);
+
 }
 .artlist, .newslist {
     display: block;
@@ -70,7 +81,9 @@ iframe {
 }
 @media (max-width: 40rem) {
     .artlist {
-        width: calc(100% - 1rem);
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
     .newslist {
         width: calc(100% - 1rem);
