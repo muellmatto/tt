@@ -19,7 +19,7 @@
 
         <div class="menu-left">
             <a href="/">
-                TIM THOMCZYK
+                <?php echo $Site->title() ?>
             </a>
         </div>
                 <?php
