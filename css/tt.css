@@ -38,6 +38,12 @@ body {
 .active {
     text-decoration: overline;
 }
+.sub_navigation {
+    font-size: 1.2rem;
+    float: left;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
 .title {
     margin-top: 2rem;
     margin-bottom: 2rem;
