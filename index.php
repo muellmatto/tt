@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <title><?php echo $Site->title() ?></title>
         <script src="https://use.fontawesome.com/d1bee5c0c4.js"></script>
-        <?php Theme::favicon('favicon.ico'); ?>
+        <?php Theme::favicon('favicon.png'); ?>
         <?php Theme::css('normalize.css') ?>
         <?php Theme::css('tt.css') ?>
         <?php Theme::plugins('siteHead'); ?>
