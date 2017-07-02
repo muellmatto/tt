@@ -19,16 +19,20 @@
         });
 
         echo '<ul class="taglist">';
-        echo '<li class="tagItem"><a href="'.$Site->url().'art">all ('.count($APL->getPostsByBlackList(['News'])).')</a></li>';
+        $tag_order = ['mixed', 'painting', 'photonude', 'photoworld', 'photohumanz', 'grenznacht', '100schaft', 'media'];
+        foreach($tag_order as $sort_tag) {
+            echo '<li class="tagItem"><a href="'.$Site->url().'tag/'.$sort_tag.'">'.$sort_tag.' ('.count($APL->getPostsByTagList([$sort_tag])).')</a></li>';
+        }
         foreach($tagArray as $tagKey=>$fields)
         {
             // Print the parent
-            if ( $fields['name'] != 'news') {
+            if ( $fields['name'] != 'news' && !(in_array($fields['name'] , $tag_order))) {
                 echo '<li class="tagItem"><a href="'.HTML_PATH_ROOT.$filter.'/'.$fields['tagKey'].'">'.$fields['name'].' ('.$fields['count'].')</a></li>';
             }
         }
+        echo '<li class="tagItem"><a href="'.$Site->url().'art">all ('.count($APL->getPostsByBlackList(['News'])).')</a></li>';
         echo '</ul>';
-        echo '<div style="clear: both;></div>"';
+        echo '<div style="clear: both;"></div>';
         
         echo '<div class="worksListFrame">';
 

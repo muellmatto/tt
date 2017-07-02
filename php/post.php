@@ -12,11 +12,11 @@
         echo '<div class="content">';
             // are we browsing on specific tag?
             if (isset($fromTag)) {
-                echo '<a style="float: right;" href="'.$APL->getNextPostByTagList([$fromTag])->permalink().'?fromTag='.$fromTag.'">NEXT</a>';
+                echo '<a style="float: right;" href="'.$APL->getNextPostByTagList([$fromTag])->permalink().'?fromTag='.$fromTag.'">></a>';
                 echo '<a style="float: left;" href="'.$APL->getPrevPostByTagList([$fromTag])->permalink().'?fromTag='.$fromTag.'">PREV</a>';
             // are we browsing all warks?
             } elseif ( $Post->tags() != 'news' ) {
-                echo '<a style="float: right;" href="'.$APL->getNextPostByBlackList(['News'])->permalink().'">NEXT</a>';
+                echo '<a style="float: right;" href="'.$APL->getNextPostByBlackList(['News'])->permalink().'">></a>';
                 echo '<a style="float: left;" href="'.$APL->getPrevPostByBlackList(['News'])->permalink().'">PREV</a>';
             }
             echo '<div style="clear: both;"></div>';

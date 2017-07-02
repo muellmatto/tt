@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:700');
 
 body {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Oswald', sans-serif;
     margin: 0;
     display: block;
     color: black;
     font-size: x-large;
+}
+.scrollText {
+    color: #ad6768;
+    font-size: 1.2rem;
+    margin: 1rem;
 }
 .frame {
     max-width: 60rem;
@@ -12,11 +18,14 @@ body {
     box-shadow: 0 0 20px 0.1px grey;
     */
     margin: auto;
-    margin-top: 1rem; 
+    margin-top: 0rem; 
     padding: 0.5rem;
     box-sizing: border-box;
     overflow: hidden;
     display: block;
+}
+.menu-left, .menu-right {
+    font-size: 1.2rem;
 }
 .menu-left {
     float: left;
@@ -24,7 +33,10 @@ body {
 }
 .menu-right {
     float: right;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
+}
+.active {
+    text-decoration: overline;
 }
 .title {
     margin-top: 2rem;
@@ -46,13 +58,15 @@ iframe {
 }
 .taglist {
     padding-bottom: 1rem;
-    list-style: circle;
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
 }
 .tagItem {
     float: left;
-    padding-right: 2rem;
+    padding-right: 1rem;
     padding-bottom: 0.5rem;
-    font-size: large;
+    font-size: 1rem;
     transform: rotate(4deg);
 
 }
@@ -60,19 +74,33 @@ iframe {
     display: block;
     box-sizing: border-box;
     float: left;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-bottom: 0.05rem;
+}
+.artlist {
+    padding-left: 0rem;
+    padding-right: 0rem;
 }
 .newslist {
-    background-color: #8d1d2c;
+    background-color: rgb(180,0,0);
     margin: 0.5rem;
+    margin-bottom: 0rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 .newslist a{
     text-decoration: none;
     color: white;
 }
+.newslist h3 {
+    font-size: 1.2rem;
+}
+.newslist h3, .newslist h6 {
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
 .artlist img, .newslist img {
     width: 100%;
+    padding: 0.1rem;
 }
 @media (min-width: 40rem) {
     .artlist {
@@ -84,7 +112,7 @@ iframe {
 }
 @media (max-width: 40rem) {
     .artlist {
-        width: calc(100%);
+        width: calc(50%);
     }
     .newslist {
         width: 100%;
