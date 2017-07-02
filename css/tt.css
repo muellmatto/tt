@@ -43,6 +43,14 @@ body {
     margin-bottom: 2rem;
     font-weight: 700;
 }
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+h2 {
+    margin-top: 0.2rem;
+    font-size: 2rem;
+}
 a {
     text-decoration: none;
     color: black;    
@@ -102,12 +110,20 @@ iframe {
     width: 100%;
     padding: 0.1rem;
 }
+.content p {
+    /*
+    margin-top: 0;
+    */
+}
 @media (min-width: 40rem) {
     .artlist {
         width: 33%;
     }
     .newslist {
         width: calc(50% - 1rem);
+    }
+    .content img {
+        max-width: 50%
     }
 }
 @media (max-width: 40rem) {

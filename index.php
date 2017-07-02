@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <title><?php echo $Site->title() ?></title>
+        <script src="https://use.fontawesome.com/d1bee5c0c4.js"></script>
         <?php Theme::favicon('favicon.ico'); ?>
         <?php Theme::css('normalize.css') ?>
         <?php Theme::css('tt.css') ?>
@@ -48,7 +49,7 @@
                 <?php endforeach; ?>
 
                 <?php 
-                                if ($Url->whereAmI() == "blog" || $Url->whereAmI() == 'tag'){
+                                if ($Url->whereAmI() == "blog" || $Url->whereAmI() == 'tag' || $Url->whereAmI() == "post"){
                                         $active_class_art = "active";
                                     } else {
                                         $active_class_art = "";

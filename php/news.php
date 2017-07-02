@@ -1,6 +1,16 @@
 <?php
             echo $treadmill->get();
+?>
+        <div style="clear: both;"></div>
+        <a href="https://facebook.com/tim.thomczyk">
+            <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+        </a>
+        <a href="https://instagram.com/timthomczyk">
+            <i style="float: right;" class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+        </a>
+        <div style="clear: both;"></div>
 
+<?php
             $newsExhiPosts = $APL->getPostsByTaglist(['News']);
             
             foreach ($newsExhiPosts as $i) {
