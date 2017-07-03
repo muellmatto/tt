@@ -4,7 +4,7 @@
 
         if ( !(empty( $_GET['fromTag'] )) ) {
             $fromTag = $_GET['fromTag'];
-            echo '<h3>'.$fromTag.'</h3>';
+            echo '<a href="'.$Site->url().'tag/'.$fromTag.'"><h3>'.$fromTag.'</h3></a>';
         }
         echo '<h2>'.$Post->title().'</h2>';
 
